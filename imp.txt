@@ -28,3 +28,5 @@ Rebase or Merge: You can choose to rebase or merge your feature branches into de
 Pull Requests: Consider using pull requests to facilitate code review and collaboration between team members.
 Branching Strategy: While the master>dev>feature structure is common, there are other branching strategies you can explore, such as Gitflow or Trunk-Based Development.
 By following this branching model, you can maintain a well-organized and efficient development workflow, ensuring that your codebase remains stable and manageable.
+
+only learning git
