@@ -1,0 +1,30 @@
+Master Branch:
+
+Represents the production-ready state of your codebase.
+Should always be stable and deployable.
+Changes to the master branch should be carefully reviewed and tested before merging.
+Development Branch:
+
+Serves as a staging area for new features and bug fixes.
+Developers can work on their individual features or bug fixes on separate branches that branch off from dev.
+Once a feature or bug fix is complete, it's merged into the dev branch.
+Feature Branches:
+
+Created from the dev branch to isolate specific features or bug fixes.
+Each feature branch should have a clear and concise name that reflects its purpose.
+Developers can work independently on their feature branches without affecting other team members.
+Once a feature is complete, it's merged back into the dev branch.
+Workflow:
+
+Create a new feature branch: From the dev branch, create a new feature branch using git checkout -b feature-name.
+Develop the feature: Make your changes on the feature branch.
+Test the feature: Thoroughly test the feature to ensure it works as expected.
+Merge into dev: Once the feature is ready, merge it into the dev branch using git checkout dev followed by git merge feature-name.
+Review and test on dev: Review the changes on the dev branch and ensure they don't introduce any conflicts or regressions.
+Merge into master: When the dev branch is stable and ready for production, merge it into the master branch.
+Additional Considerations:
+
+Rebase or Merge: You can choose to rebase or merge your feature branches into dev. Rebasing can keep your commit history cleaner, while merging preserves the original branch structure.
+Pull Requests: Consider using pull requests to facilitate code review and collaboration between team members.
+Branching Strategy: While the master>dev>feature structure is common, there are other branching strategies you can explore, such as Gitflow or Trunk-Based Development.
+By following this branching model, you can maintain a well-organized and efficient development workflow, ensuring that your codebase remains stable and manageable.
